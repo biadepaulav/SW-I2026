@@ -1,53 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+ <html lang="pt_br">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="script.js"></script>
-    <title>Média de notas - Aula 25/03</title>
-</head>
-<body>
-    <main>
-        <div class = "formulario">
-            <div>
-                <h4>Digite o seu nome:</h4>
-                <input type="text" id="nome">
-            </div>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+ </head>
+ <body>
+     <main>
 
-            <div>
-            <h4>Digite o seu sobrenome:</h4>
-                <input type="text" id="sobrenome">
-            </div>
+ <?php
+ // $MSG = "Sua média é: ";
+       // $nome = "User";
 
-            <div>
-                <h4>Digite a sua primeira nota:</h4>
-                <input type="text" id="nota1">
-            </div>
+        $_m1 = $_POST["n1"];
+        $_m2 = $_POST["n2"];
+        $_m3 = $_POST["n3"];
+        $_media= (($_m1+$_m2+$_m3)/3);
 
-            <div>
-                <h4>Digite a sua segunda nota:</h4>
-                <input type="text" id="nota2">
-            </div>
+        $nome = $_POST["name"];
+        $sobrenome = $_POST["sn"];
+        echo "<p>É um prazer te conhecer $nome $sobrenome!</p>";
+        echo "<p>Sua média é de: $_media</p>";
 
-            <div>
-                <h4>Digite a sua terceira nota:</h4>
-                <input type="text" id="nota3">
-            </div>
-           
-            <br>
-            <br>
 
-            <div class = "botao">
-                <button type="submit">Enviar</button>
-            </div>
-        </div>
-        
-
-        <?php 
-
-        ?>
-    </main>
+ ?>
+  </main>
     
 </body>
 </html>
+ 
