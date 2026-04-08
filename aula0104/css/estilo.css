@@ -1,0 +1,13 @@
+*{
+    background-color: darkseagreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.titulo{
+    color: darkslategray;
+}
+
+.formulario{
+    border-radius: 10px;
+}
