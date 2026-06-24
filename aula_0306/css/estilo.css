@@ -3,6 +3,12 @@
 
 }
 
-.banner{
-    
+form{
+    background-color: bisque;
+    align-items: center;
+    padding: 30px;
+}
+
+button{
+background-color: mediumaquamarine;
 }
